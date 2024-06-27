@@ -407,6 +407,7 @@ function toggleOPENG()
     end
 end
 bindKey(tostring(guiGetText(Keybind)),"down",toggleOPENG)
+bindKey ( player, "F1", "down", toggleOPENG )   -- bind the player's F1 down key
 
 function fastSprint()
     setPedAnimationSpeed(localPlayer,"run_player",3.5)
