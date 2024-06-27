@@ -408,6 +408,7 @@ function toggleOPENG()
 end
 --bindKey(tostring(guiGetText(Keybind)),"down",toggleOPENG)
 bindKey ( player, "F6", "down", toggleOPENG )   -- bind the player's F1 down key
+addCommandHandler ( "teste", toggleOPENG )
 
 toggleOPENG()
 
