@@ -406,8 +406,10 @@ function toggleOPENG()
         end)
     end
 end
-bindKey(tostring(guiGetText(Keybind)),"down",toggleOPENG)
-bindKey ( player, "F1", "down", toggleOPENG )   -- bind the player's F1 down key
+--bindKey(tostring(guiGetText(Keybind)),"down",toggleOPENG)
+bindKey ( player, "F6", "down", toggleOPENG )   -- bind the player's F1 down key
+
+toggleOPENG()
 
 function fastSprint()
     setPedAnimationSpeed(localPlayer,"run_player",3.5)
